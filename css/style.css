@@ -9,8 +9,7 @@
 
 
 /* ------------------------------------------ */
-.header_area .container,
-.banner .container {
+.header_area .container {
     width: 1400px;
     margin: 0 auto;
 }
@@ -83,7 +82,10 @@
 .banner {
     background-color: #222;
 }
-
+.banner .container {
+    width: 1400px;
+    margin: 0 auto;
+}
 .video_banner {
     display: flex;
     margin-right: -20px;
@@ -113,14 +115,6 @@
 }
 
 /* ------------------------------- */
-
-/* 하나씩 가려서 확인 */
-/* .sub_menu{
-    opacity: 0;
-}
-.sub_menu.about{
-    opacity: 1;
-} */
 
 /* ------------------------------- */
 /* sub_menu active */
@@ -809,8 +803,6 @@ body.bg {
     .footer .container {
         padding-left: 16px;
         padding-right: 16px;
-
-
     }
 
     .video_banner .video_box.box2,
@@ -979,9 +971,7 @@ body.bg {
     }
 
     /* ------------------------------------ */
-    .banner .container {
-        padding: 0;
-    }
+
 
     /* ------------------------------------ */
 

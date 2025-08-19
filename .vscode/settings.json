@@ -1,3 +1,33 @@
 {
-  "liveServer.settings.port": 5504
+    /* #################################################################################
+    SCSS
+################################################################################# */
+"liveSassCompile.settings.generateMap": false, // .map 파일 생성 여부(기본:true)
+"liveSassCompile.settings.compileOnWatch": false, // Watch Sass 실행시 전체 자동 컴파일 (기본:true)
+"liveSassCompile.settings.formats": [ // 컨버팅 파일 형식 설정
+    {
+        "format": "expanded", // 여러줄 코딩으로 컨버팅
+        "extensionName": ".css", // 컨버팅 확장자 파일명
+        "savePath": "~/..", // 컨버팅 파일 저장 경로
+        "indentType" : "tab", // 들여쓰기 타입(tab/space)
+        "indentWidth": 1, // 들여쓰기 횟수(tab:1/space:4)
+    },
+    // {
+    //  "format": "compressed", // minify 컨버팅
+    //  "extensionName": ".min.css", // 컨버팅 확장자 파일명
+    //  "savePath": "~/..", // 컨버팅 파일 저장 경로
+    // }
+],
+"liveSassCompile.settings.includeItems": [ // 경로에 있는 .scss파일만 컴파일
+    "/**/css/scss/*.scss" // 전역설정
+    // "/**/homepage/2023/resource/css/uiux/scss/*.scss" // 개별설정
+],
+"liveSassCompile.settings.excludeList": [ // 컴파일에서 제외할 파일 및 폴더 설정
+    "/#svn/**",
+    "/**/*finish-project/**",
+],
+// "liveSassCompile.settings.autoprefix": [ // 벤더프리픽스 생성
+//  "> 1%", // 1% 이상의 사용율을 가진 브라우저
+//  "last 2 versions", // 각 브라우저의 마지막 2개 버전
+// ],
 }
